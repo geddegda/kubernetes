@@ -5,6 +5,7 @@ metadata:
     run: nginx
     another: label
     hello: world
+    animal: dog
   name: nginx-john
 spec:
   containers:
