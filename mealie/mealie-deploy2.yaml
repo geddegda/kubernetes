@@ -20,10 +20,10 @@ spec:
           name: mealie
           ports:
             - containerPort: 9000
-          volumeMounts:
-            - name: mealie-data
-              mountPath: /app/data1
+          volumeDevices:
+            - name: mypd
+              devicePath: /app/boom
       volumes:
-        - name: mealie-data
+        - name: mypd
           persistentVolumeClaim:
-            claimName: mealie-data
+            claimName: mealie-data2
